@@ -1,6 +1,5 @@
-# React Gif Tag Component
-
-A React component for displaying random Gifs based on user-provided tags. This component uses the Giphy API to fetch and display Gifs dynamically.
+Random GIF Generator
+This is a simple React-based web application that generates random GIFs based on user-provided tags. The GIFs are fetched from the Giphy API using the provided tag. The application utilizes the useGif custom hook to manage the state and handle the API requests.
 
 ## Prerequisites
 
@@ -15,45 +14,49 @@ Before using this component, make sure you have the following installed:
 
    ```bash
    git clone https://github.com/your-username/your-repository.git
-Install dependencies:
+   
+2. Install dependencies:
 
 bash
 
 npm install
-Create a Giphy API key:
+
+
+3. Get a Giphy API Key:
 
 Visit Giphy Developers and sign up for an API key.
 
-Create a .env file in the root of your project and add your API key:
+Create a .env file in the root directory of the project and add your API key:
 
-env
-
+makefile
 REACT_APP_GIPHY_API_KEY=your-api-key
-Start the development server:
+
+4. Start the development server:
 
 bash
 
 npm start
-Open your browser and navigate to http://localhost:3000/ to see the component in action.
 
-Usage
-The Tag component allows users to input a tag, fetch a random Gif based on that tag, and display it. Here's how you can use it:
+5. Open your browser and visit http://localhost:3000 to view the application.
 
-jsx
+Features
 
-import React from 'react';
-import Tag from './path-to-your-component/Tag';
+The default tag is set to 'Goku', and a random GIF related to this tag is displayed initially.
 
-const App = () => {
-  return (
-    <div>
-      <Tag />
-    </div>
-  );
-};
+You can input any tag in the provided input field and click the "Generate" button to fetch and display a random GIF related to the entered tag.
 
-export default App;
+A loading spinner is displayed while the GIF is being fetched.
 
+Components
 
-Customization
-Feel free to customize the component according to your project's needs. You can modify the styling, add more features, or integrate it with other components.
+Tag Component
+Displays a random GIF based on the provided tag.
+Allows users to input a custom tag and generate a random GIF accordingly.
+
+Spinner Component
+Displays a loading spinner while waiting for the GIF to be fetched.
+
+useGif Hook
+Custom hook for managing the state and handling API requests to Giphy.
+
+Feel free to customize and expand upon this application according to your needs!
