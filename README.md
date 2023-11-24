@@ -53,5 +53,7 @@ const App = () => {
 };
 
 export default App;
+
+
 Customization
 Feel free to customize the component according to your project's needs. You can modify the styling, add more features, or integrate it with other components.
