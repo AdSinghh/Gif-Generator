@@ -40,7 +40,7 @@ Usage
 The Tag component allows users to input a tag, fetch a random Gif based on that tag, and display it. Here's how you can use it:
 
 jsx
-Copy code
+
 import React from 'react';
 import Tag from './path-to-your-component/Tag';
 
