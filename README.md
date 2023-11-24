@@ -29,6 +29,7 @@ Visit Giphy Developers and sign up for an API key.
 Create a .env file in the root directory of the project and add your API key:
 
 makefile
+
 REACT_APP_GIPHY_API_KEY=your-api-key
 
 4. Start the development server:
@@ -50,13 +51,16 @@ A loading spinner is displayed while the GIF is being fetched.
 Components
 
 Tag Component
+
 Displays a random GIF based on the provided tag.
 Allows users to input a custom tag and generate a random GIF accordingly.
 
 Spinner Component
+
 Displays a loading spinner while waiting for the GIF to be fetched.
 
 useGif Hook
+
 Custom hook for managing the state and handling API requests to Giphy.
 
 Feel free to customize and expand upon this application according to your needs!
